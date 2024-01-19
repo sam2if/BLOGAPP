@@ -11,7 +11,7 @@ RSpec.describe Like, type: :model do
   describe 'update_post_likes_counter' do
     let(:user) { create(:user) }
     let(:post) { create(:post, author: user) }
-    let!(:like) { create(:like, user: user, post: post) }
+    let!(:like) { create(:like, user:, post:) }
 
     it 'updates the likes_counter of the associated post' do
       initial_likes_count = post.likes.count

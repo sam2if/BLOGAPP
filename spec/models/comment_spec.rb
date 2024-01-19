@@ -11,7 +11,7 @@ RSpec.describe Comment, type: :model do
   describe 'update_post_comments_counter' do
     let(:user) { create(:user) }
     let(:post) { create(:post, author: user) }
-    let!(:comment) { create(:comment, user: user, post: post) }
+    let!(:comment) { create(:comment, user:, post:) }
 
     it 'updates the comments_counter of the associated post' do
       initial_comments_count = post.comments.count
