@@ -115,7 +115,6 @@ To run the project, execute the following command:
 
 - Run `rails s` to start a development server.
 
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 
