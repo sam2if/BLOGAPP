@@ -109,6 +109,9 @@ To run the project, execute the following command:
 
 - Run `rails s` to start a development server.
 
+### to check test cases
+
+- run rails spec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
