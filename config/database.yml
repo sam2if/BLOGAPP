@@ -5,13 +5,13 @@ default: &default
 
 development:
   <<: *default
-  database: blogapp_development
+  database: blog_app_development
   username: postgres
   password: samif
 
 test:
   <<: *default
-  database: blogapp_test
+  database: blog_app_test
   username: postgres
   password: samif
 
