@@ -1,17 +1,19 @@
 class PostsController < ApplicationController
-<<<<<<< HEAD
     def index
       @user = User.find(params[:user_id])
       @posts = @user.posts.includes(:comments)
     end
+
     def show
       @user = User.find(params[:user_id])
       @post = @user.posts.find(params[:id])
     end
+
     def new
       @user = User.find(params[:user_id])
       @post = Post.new
     end
+
     def create
       @user = current_user
       @post = Post.new(post_parameters)
@@ -24,21 +26,11 @@ class PostsController < ApplicationController
         render :new
       end
     end
+
     private
     def post_parameters
       params.require(:post).permit(:title, :text)
     end
   end
-  
-=======
-  def index
-    @user = User.find(params[:user_id])
-    @posts = @user.posts
-  end
-
-  def show
-    @user = User.find(params[:user_id])
-    @post = @user.posts.find(params[:id])
-  end
 end
->>>>>>> f1a529a83d0722c374de25fcca992e0ae289785e
+
